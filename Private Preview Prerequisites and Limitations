@@ -1,11 +1,14 @@
+Prerequisites :
+This step needs to be performed by  AAD tenant administrator:
+Install AzureAD powershell: AzureAD Module
+Step 1 : Connect-AzureAD -TenantId <customer tenant id>
+Step 2 : New-AzureADServicePrincipal -AppId 5657e26c-cc92-45d9-bc47-9da6cfdb4ed9
+
+Limitations:
+
 Private preview is only avaialble for the customers who are under NDA.
 AAD feature can be only enabled for newly created servers during private preview. AAD can be enabled for existing servers during AAD public preview.
 AAD feature can be only enabled for flexible servers running PG versions 12. Version 11 and 13 will be supported during AAD public preview.
 Attached PowerShell script needs to be run by AAD tenant administrator.
 Disabling PostgreSQL authentication (support for Azure AD authencation only) is unavailable in private preview and will be available during public preview
-This step needs to be performed by  AAD tenant administrator:
-Install AzureAD powershell: AzureAD Module
-Step 1 
-Connect-AzureAD -TenantId <customer tenant id>
-Step 2 : 
-New-AzureADServicePrincipal -AppId 5657e26c-cc92-45d9-bc47-9da6cfdb4ed9
+
