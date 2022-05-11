@@ -1,0 +1,5 @@
+Private preview is only avaialble for the customers who are under NDA.
+AAD feature can be only enabled for newly created servers during private preview. AAD can be enabled for existing servers during AAD public preview.
+AAD feature can be only enabled for flexible servers running PG versions 12. Version 11 and 13 will be supported during AAD public preview.
+Attached PowerShell script needs to be run by AAD tenant administrator.
+Disabling PostgreSQL authentication (support for Azure AD authencation only) is unavailable in private preview and will be available during public preview
